@@ -192,9 +192,9 @@ public class p2 {
         // inverted_half_pyramid(5);
         // Floyds_Triangle(5);
         // odd_even_triangle(4);
-        // butterfly(5);
-        // solid_rhombus(5);
-        // hollow_rhombus(5,5);
+        butterfly(5);
+        solid_rhombus(5);
+        hollow_rhombus(5,5);
         diamond_pattern(4);
     }
 }
