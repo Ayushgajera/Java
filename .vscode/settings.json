@@ -1,0 +1,5 @@
+{
+    "workbench.list.smoothScrolling": true,
+    "autoimport.autoComplete": false,
+    "C_Cpp.vcFormat.indent.lambdaBracesWhenParameter": false
+}
