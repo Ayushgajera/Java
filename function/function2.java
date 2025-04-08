@@ -1,33 +1,33 @@
 package function;
 import java.util.*;
-// public class function2{
-//     //function for factorial
-//    public static int fact(int n){
-//         int f=1;
-//        for(int i=1;i<=n;i++)
-//        {
-//            f=f*i;
-//        }
-//        return f;
+public class function2{
+    //function for factorial
+   public static int fact(int n){
+        int f=1;
+       for(int i=1;i<=n;i++)
+       {
+           f=f*i;
+       }
+       return f;
        
-//    }
-//    //function for binomial coefficient
-//    public static int bincofi(int a,int b){
+   }
+   //function for binomial coefficient
+   public static int bincofi(int a,int b){
        
-//         int num=fact(a);
-//         int r=fact(b);
-//         int nr=fact((a-b));
-//         int ncr=num/(r*nr);
-//         System.out.println(ncr);
-//        return ncr;
+        int num=fact(a);
+        int r=fact(b);
+        int nr=fact((a-b));
+        int ncr=num/(r*nr);
+        System.out.println(ncr);
+       return ncr;
        
-//    }
+   }
    
-//     public static void main(String args[])
-//     {
-//        bincofi(5,2);
-//     }
-// }
+    public static void main(String args[])
+    {
+       bincofi(5,2);
+    }
+}
 
 public class function2{
    
@@ -68,17 +68,17 @@ public class function2{
    
     public static void main(String args[])
     {
-    //     int num=122;
-    //    int reverse=bincofi(num);
-    //    if(reverse==num)
-    //    {
-    //        System.out.println("Palindrome");
-    //    }
-    //    else
-    //    {
-    //        System.out.println("Not Palindrome");
+        int num=122;
+       int reverse=bincofi(num);
+       if(reverse==num)
+       {
+           System.out.println("Palindrome");
+       }
+       else
+       {
+           System.out.println("Not Palindrome");
 
-    //    }
+       }
     binaryConvert(1101);
     }
 }
