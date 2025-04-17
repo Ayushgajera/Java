@@ -32,11 +32,12 @@ public class arrayBasic {
         return -1;
     }
 
+
      public static void main(String[] args) {
         int num[]={2,4,6,8,10,12,14};
         int key=12;
         // displayarray(num);
-       System.out.println("index key is:" +binarysearch(num,key));
+        // System.out.println("index key is:" +binarysearch(num,key));
 
      }
 }
