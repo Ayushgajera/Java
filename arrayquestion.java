@@ -12,14 +12,32 @@ public class arrayquestion {
 
         }
     }
-    public static void main(String args[])
+    public static void pairsInArray(int num[])
     {
-        int num[]={2,4,6,8,10,12};
-        reverseArray(num);
         for(int i=0;i<num.length;i++)
         {
-            System.out.print(num[i]+" ");
+            
+            for(int j=i+1;j<num.length;j++)
+            {
+                System.out.print("("+ num[i] +","+num[j]+")");
+            }
+            System.out.println();
         }
-        System.out.println();
+
+    }
+
+    public static void subarray(int num[]){
+        
+    }
+    public static void main(String args[])
+    {
+        int num[]={2,4,6,8,10};
+        // reverseArray(num);
+        // for(int i=0;i<num.length;i++)
+        // {
+        //     System.out.print(num[i]+" ");
+        // }
+        // System.out.println();
+        pairsInArray(num);
     }
 }
