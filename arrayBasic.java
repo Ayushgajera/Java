@@ -5,20 +5,7 @@ public class arrayBasic {
             System.out.println(num[i]);
         }
     }
-    public static void countEvenOdd(int[] arr) {
-        int even = 0, odd = 0;
-
-        for (int num : arr) {
-            if (num % 2 == 0) {
-                even++;
-            } else {
-                odd++;
-            }
-        }
-
-        System.out.println("Even numbers: " + even);
-        System.out.println("Odd numbers: " + odd);
-    }
+   
     public static int linearSearch(int num[],int key){
         for(int i=0;i<num.length;i++)
         {
@@ -51,7 +38,6 @@ public class arrayBasic {
         int num[]={2,4,6,8,10,12,14};
         int key=12;
         // displayarray(num);
-        countEvenOdd(num);
         // System.out.println("index key is:" +binarysearch(num,key));
 
      }
