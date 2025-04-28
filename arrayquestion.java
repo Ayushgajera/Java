@@ -52,6 +52,33 @@ public class arrayquestion {
         System.out.println("max of subarray:" + max);
 
     }
+    public static void prefixSubarraySum(int num[]) {
+        int max = Integer.MIN_VALUE;
+        int prefix[]=new int[num.length];
+        prefix[0]=num[0];
+        for (int i = 1; i < prefix.length; i++) {
+           prefix[i]=prefix[i-1]+num[i];
+        }
+        
+        for (int i = 0; i < num.length; i++) {
+
+            for (int j = i + 1; j < num.length; j++) {
+                int sum = i==0?prefix[j]:prefix[j]-prefix[i-1];
+
+                
+                System.out.print("  sum of subarray is :" + sum);
+                if (sum > max) {
+                    max = sum;
+                }
+                System.out.println();
+            }
+            System.err.println();
+        }
+        System.out.println("max of subarray:" + max);
+
+    }
+
+    
 
     public static void main(String args[]) {
         int num[] = { 2, 4, 6, 8, 10 };
@@ -60,7 +87,8 @@ public class arrayquestion {
         // {
         // System.out.print(num[i]+" ");
         // }
-        System.out.println();
-        subarray(num);
+        // System.out.println();
+        // subarray(num);
+        prefixSubarraySum(num);
     }
 }
