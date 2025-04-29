@@ -75,11 +75,25 @@ public class arrayquestion {
         System.out.println("max of subarray:" + max);
 
     }
+    public static void kadansAlgo(int num[]) {
+        int max = Integer.MIN_VALUE;
+        int cs=0;
+        for (int i = 0; i < num.length; i++) {
+                cs=cs+num[i];
+                if (cs<0) {
+                   cs=0;
+                }
+                max=Math.max(cs,max);
+                
+        }
+        System.out.println("max of subarray:" + max);
+
+    }
 
     
 
     public static void main(String args[]) {
-        int num[] = { 2, 4, 6, 8, 10 };
+        int num[] = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
         // reverseArray(num);
         // for(int i=0;i<num.length;i++)
         // {
@@ -87,6 +101,7 @@ public class arrayquestion {
         // }
         // System.out.println();
         // subarray(num);
-        prefixSubarraySum(num);
+        // prefixSubarraySum(num);
+        kadansAlgo(num);
     }
 }
