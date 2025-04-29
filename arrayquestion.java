@@ -13,7 +13,6 @@ public class arrayquestion {
 
         }
     }
-
     public static void pairsInArray(int num[]) {
         for (int i = 0; i < num.length; i++) {
 
@@ -24,7 +23,6 @@ public class arrayquestion {
         }
 
     }
-
     public static void subarray(int num[]) {
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
