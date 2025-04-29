@@ -89,6 +89,18 @@ public class arrayquestion {
         System.out.println("max of subarray:" + max);
 
     }
+    public static void kadansAlgo2(int num[]) {
+        //new way to code
+        int max = num[0]; 
+        int cs = num[0];
+    
+        for (int i = 1; i < num.length; i++) {
+            cs = Math.max(num[i], cs + num[i]);
+            max = Math.max(max, cs);
+        }
+    
+        System.out.println("Max of subarray: " + max);
+    }
 
     
 
@@ -103,5 +115,6 @@ public class arrayquestion {
         // subarray(num);
         // prefixSubarraySum(num);
         kadansAlgo(num);
+        kadansAlgo2(num);
     }
 }
