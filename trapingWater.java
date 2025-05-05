@@ -30,9 +30,31 @@ public class trapingWater {
         }
         return trappedwater;
     }
+    public static int  buyandsellStock(int value[])
+    {
+        int buyprice=Integer.MAX_VALUE;
+        int maxProfit=0;
+
+        for(int i=0;i<value.length;i++)
+        {
+            if(buyprice<value[i])
+            {
+                //if buyprice law and sell price high then profit is possible
+                int profit=value[i]-buyprice;
+                maxProfit=Math.max(maxProfit, profit);
+            }
+            else{
+                // buyprice set
+                buyprice=value[i];
+            }
+        }
+        return maxProfit;
+    }
     public static void main(String[] args)
     {
         int height[] = { 4,2,0,6,3,2,5 };
         System.out.println(trappedRainWater(height));
+        int value[] = {7,1,5,3,10,40};
+        System.out.println(buyandsellStock(value));
     }
 }
